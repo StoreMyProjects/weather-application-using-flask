@@ -24,5 +24,4 @@ def index():
 
     return render_template("layout.html")
 
-
 app.run(debug=True)

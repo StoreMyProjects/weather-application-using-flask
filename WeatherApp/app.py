@@ -16,11 +16,12 @@ def index():
         weather_data = weather_url.json()
 
         temp = round(weather_data['main']['temp'])
+        weather = weather_data["weather"][0]["main"]
         humidity = weather_data['main']['humidity']
         wind_speed = weather_data['wind']['speed']
-        clouds = weather_data['clouds']['all']
+        cloudiness = weather_data['clouds']['all']
 
-        return render_template("result.html", temp=temp, humidity=humidity, wind_speed=wind_speed, city=city_name)
+        return render_template("result.html", temp=temp, humidity=humidity, wind_speed=wind_speed, cloudiness=cloudiness, weather=weather, city=city_name)
 
     return render_template("layout.html")
 

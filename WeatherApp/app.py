@@ -11,7 +11,7 @@ def index():
         city_name = request.form['city']
         api_key = "your_api_key"
 
-        weather_url = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric')
+        weather_url = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric')
 
         weather_data = weather_url.json()
 

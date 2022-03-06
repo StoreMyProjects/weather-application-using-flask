@@ -1,20 +1,14 @@
-{% extends "index.html" %}
+{% extends "layout.html" %}
 
 {% block body %}
-<div style="background-image: url('https://i.pinimg.com/originals/1a/40/9f/1a409feac204d9f5ba5561e0212d0ae6.jpg'); height: 100vh">
-    <div class="container-sm h-100">
-        <div class="row justify-content-center">
-            <div class="col-sm-9 p-5">
-                <div class="card border-0 p-3 shadow-sm text-center">
-                    <h3 class="text-muted">Current Weather For {{ city }}</h3>
-                    <h5 class="lead text-muted">{{ temp }} &#176; C</h5>
-                    <h5 class="lead text-muted">{{ weather }}</h5>
-                    <h5 class="lead text-muted">Cloudiness: {{ cloudiness }} % </h5>
-                    <h5 class="lead text-muted">Humidity: {{ humidity }}%</h5>
-                    <h5 class="lead text-muted">Wind Speed: {{ wind_speed }} m/s</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="card border-0 p-3 shadow-sm text-center">
+    <h3 class="text-muted">Current Weather For {{ city }}</h3>
+    <h5 class="lead text-muted">{{ temp }} &#176; C</h5>
+    <h5 class="lead text-muted">{{ weather }}</h5>
+    <h5 class="lead text-muted">Cloudiness: {{ cloudiness }} % </h5>
+    <h5 class="lead text-muted">Humidity: {{ humidity }}%</h5>
+    <h5 class="lead text-muted">Wind Speed: {{ wind_speed }} m/s</h5>
 </div>
+
 {% endblock %}

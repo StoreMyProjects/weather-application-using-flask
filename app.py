@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 import requests
-import os
 import json
 
 app = Flask(__name__)
@@ -10,7 +9,7 @@ def index():
 
     if request.method == "POST":
         city_name = request.form['city']
-        api_key = os.getenv('YOUR_API_KEY')
+        api_key = 'your_api_key'
 
         weather_url = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric')
 

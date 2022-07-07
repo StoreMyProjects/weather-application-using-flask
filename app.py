@@ -1,4 +1,3 @@
-from xmlrpc.client import _HostType
 from flask import Flask, render_template, request
 import requests
 import json

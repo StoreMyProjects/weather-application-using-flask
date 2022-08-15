@@ -6,7 +6,7 @@ on:
 
 env:
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ amrendra01/weather-app }}
+  IMAGE_NAME: amrendra01/weather-app
 
 
 jobs:

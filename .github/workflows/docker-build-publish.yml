@@ -6,7 +6,7 @@ on:
 
 env:
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: ${{ amrendra01/weather-app }}
 
 
 jobs:
@@ -38,7 +38,6 @@ jobs:
         uses: docker/build-push-action@v3.1.1
         with:
           context: .
-          file: ./Dockerfile
           push: true
           tags: latest
 

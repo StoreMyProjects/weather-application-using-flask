@@ -1,6 +1,6 @@
 FROM python:3.9-slim-buster
 
-ENV WEATHER_API_KEY = API_KEY
+ENV WEATHER_API_KEY=YOUR_API_KEY
 
 WORKDIR /app
 

@@ -15,7 +15,7 @@ docker build -t weather-app .
 ```
 ### Run Docker container from Docker Image
 ```
-docker run -p 5000:5000 -e API_KEY=value weather-app
+docker run -itd -p 5000:5000 -e WEATHER_API_KEY=value weather-app
 
 ```
 ### Access your App on browser

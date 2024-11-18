@@ -19,7 +19,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: mysecret
-              key: apikey 
+              key: WEATHER_API_KEY 
         resources:
           limits:
             memory: "128Mi"
